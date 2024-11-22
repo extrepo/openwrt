@@ -11,3 +11,7 @@ Installation on OpenWrt 22.03.7 (mipsel_24kc)
 ```console
 wget https://raw.githubusercontent.com/extrepo/openwrt/main/22.03.7/install.sh -O - | sh
 ```
+Installation on OpenWrt 23.05.5 (mipsel_24kc)
+```console
+wget https://raw.githubusercontent.com/extrepo/openwrt/main/22.05.5/install.sh -O - | sh
+```
