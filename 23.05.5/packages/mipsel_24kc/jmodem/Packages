@@ -1,0 +1,391 @@
+Package: atinout
+Version: 0.9.1
+Depends: libc
+License: GPLv2
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 3103
+Filename: atinout_0.9.1_mipsel_24kc.ipk
+Size: 3764
+SHA256sum: 28331cc2ee0ed693a63aa8d4a6d466c2c075e69d10a5dcc7805186b73c8d302b
+Description:  Atinout is a program that will execute AT commands in sequence and
+ capture the response from the modem.
+
+Package: cellled
+Version: 0.0.1-1
+Depends: libc
+Section: opt
+Architecture: all
+Installed-Size: 1872
+Filename: cellled_0.0.1-1_all.ipk
+Size: 2587
+SHA256sum: 492a6701b375148406c654f911813a5442f0a52dd8df9e538fe833ad61773394
+Description:  Indicate LED cellular signal signal strength.
+
+Package: fm350-modem
+Version: 0.0.2-2
+Depends: libc, comgt, kmod-usb-acm, kmod-usb-serial-option, kmod-usb-net-rndis
+Section: opt
+Architecture: all
+Installed-Size: 2450
+Filename: fm350-modem_0.0.2-2_all.ipk
+Size: 3187
+SHA256sum: 6b59eccfcf8c1399099f72e0747ae530d74148af04fee18683c5affa2710e8ad
+Description:  Simple connect to cellular for Fibocom FM350 module
+
+Package: hl-atcmd
+Version: 1
+Depends: libc
+License: GPLv2
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 2700
+Filename: hl-atcmd_1_mipsel_24kc.ipk
+Size: 3479
+SHA256sum: 6164906983c3cd6fe8d098930fc3fba0dee381d52c1fdba73ca833486d6675e2
+Description:  This simple command line tool for sending AT command to a serial device.
+
+Package: luci-app-atinout
+Version: 0.1.0-1
+Depends: libc, atinout
+Section: luci
+Architecture: all
+Installed-Size: 2920
+Filename: luci-app-atinout_0.1.0-1_all.ipk
+Size: 3727
+SHA256sum: 2b6b321f3b1b090ab0f8f768020d41dbb928a413fdbe5bd4246525226bea9bce
+Description:  LuCI JS interface for the atinout.
+
+Package: luci-app-cellled
+Version: 0.1.0-2
+Depends: libc, cellled
+Section: luci
+Architecture: all
+Installed-Size: 2178
+Filename: luci-app-cellled_0.1.0-2_all.ipk
+Size: 3013
+SHA256sum: 38ec086420821085e2d22babe1ee0edaef503fe159b672f6e7afafcf5d0b6423
+Description:  LuCI application for showing cellular RSSI LED
+
+Package: luci-app-modemband
+Version: 1.0.25
+Depends: libc, sms-tool, modemband
+Section: luci
+Architecture: all
+Installed-Size: 6750
+Filename: luci-app-modemband_1.0.25_all.ipk
+Size: 7661
+SHA256sum: 3b6219d899f31352572d47a4eb10c3403c355b93cb2893f9b065e695f1d79fba
+Description:  LuCI JS interface for the modemband. The package allows set LTE/5G bands for selected 4G/5G modems.
+
+Package: luci-app-modeminfo
+Version: 0.4.2-1
+Depends: libc, modeminfo
+License: GPLv3
+Section: luci
+Architecture: all
+Installed-Size: 5124
+Filename: luci-app-modeminfo_0.4.2-1_all.ipk
+Size: 5942
+SHA256sum: 7f905b6f19ce06100a958ac6139e6b3fbf1484acec8593e916e0bc6c7d7623dc
+Description:  Information dashboard for 3G/LTE dongle
+
+Package: luci-app-sms-tool-js
+Version: 2.0.24
+Depends: libc, sms-tool, kmod-usb-serial, kmod-usb-serial-option, comgt
+Section: luci
+Architecture: all
+Installed-Size: 22875
+Filename: luci-app-sms-tool-js_2.0.24_all.ipk
+Size: 23854
+SHA256sum: 9da032f2551100eb40c3158e2e2c02417b4d1cfa92f0f352908466d43e0c5062
+Description:  LuCI JS interface for the sms-tool. The user interface supports SMS / USSD Codes / AT Commands.
+
+Package: luci-app-telegrambot
+Version: 0.1.0-3
+Depends: libc, telegrambot
+License: GPLv3
+Section: luci
+Architecture: all
+Installed-Size: 975
+Filename: luci-app-telegrambot_0.1.0-3_all.ipk
+Size: 1832
+SHA256sum: cb8e8431ef8f1f15f357396f6cd062d79253b92721a608b81dab461fe146a490
+Description:  TelegramBot simple webUI
+
+Package: luci-proto-fm350
+Version: git-24.325.40076-1b04f16
+Depends: libc, fm350-modem
+Section: luci
+Architecture: all
+Installed-Size: 1332
+Filename: luci-proto-fm350_git-24.325.40076-1b04f16_all.ipk
+Size: 2179
+SHA256sum: 51319f4a45aa21dbc8e46cc9489ae78a36aaea7c30262947ae820e3bf328e57b
+Description:  Support for Fibocom FM350
+
+Package: luci-proto-xmm
+Version: git-24.325.40076-1b04f16
+Depends: libc, xmm-modem
+Section: luci
+Architecture: all
+Installed-Size: 1334
+Filename: luci-proto-xmm_git-24.325.40076-1b04f16_all.ipk
+Size: 2179
+SHA256sum: 3a2ee69422d5858d2d692444c9007cd0373ef50691da9777f4e4ef0c1d562627
+Description:  Support for Intel XMM
+
+Package: modemband
+Version: 20240616
+Depends: libc, sms-tool
+Section: net
+Architecture: all
+Installed-Size: 6759
+Filename: modemband_20240616_all.ipk
+Size: 7523
+SHA256sum: 86d760eb0c0343473f47ee261b6242d8ce63b1796ea2f89485b4e4cba1c0c63a
+Description:  Setting LTE/5G bands for selected modems
+
+Package: modeminfo-qmi
+Version: 0.4.2-7
+Depends: libc, modeminfo, qmi-utils
+Section: net
+Architecture: all
+Installed-Size: 3411
+Filename: modeminfo-qmi_0.4.2-7_all.ipk
+Size: 4141
+SHA256sum: 0e080b4ad3cddbae20b1d83a3a748101a7273535a0f0976044b323b1be555482
+Description:  QMI addon for modeminfo
+
+Package: modeminfo-serial-dell
+Version: 0.4.2-7
+Depends: libc, modeminfo, kmod-usb-serial-option, atinout
+Section: net
+Architecture: all
+Installed-Size: 1221
+Filename: modeminfo-serial-dell_0.4.2-7_all.ipk
+Size: 1991
+SHA256sum: 4c4778bc1c7eae8e13cea0aac8c373cefd65237fbaf51f2b7c7e9f64caade6e4
+Description:  Dell DW5821e serial addon for modeminfo
+
+Package: modeminfo-serial-fibocom
+Version: 0.4.2-7
+Depends: libc, modeminfo, kmod-usb-serial-option, kmod-usb-acm, atinout
+Section: net
+Architecture: all
+Installed-Size: 2137
+Filename: modeminfo-serial-fibocom_0.4.2-7_all.ipk
+Size: 2905
+SHA256sum: 8c1101bf91f6ecd8b23a578e1dc730376f0539aba4ab26fcb3ffbf7a66022f6e
+Description:  FIBOCOM NL668/678/FM150/FM190/FM350 serial addon for modeminfo
+
+Package: modeminfo-serial-gosun
+Version: 0.4.2-7
+Depends: libc, modeminfo, kmod-usb-serial-option, atinout
+Section: net
+Architecture: all
+Installed-Size: 955
+Filename: modeminfo-serial-gosun_0.4.2-7_all.ipk
+Size: 1716
+SHA256sum: e4f766c70754b534403a224e4211cafb2a15c384eb7aefa5f14ca5019636ed26
+Description:  Gosuncnwelink GM510 serial addon for modeminfo
+
+Package: modeminfo-serial-huawei
+Version: 0.4.2-7
+Depends: libc, modeminfo, kmod-usb-serial-option, atinout
+Section: net
+Architecture: all
+Installed-Size: 1334
+Filename: modeminfo-serial-huawei_0.4.2-7_all.ipk
+Size: 2105
+SHA256sum: a153dfb3fd5248e25818551069a7c3714abba568186f8b37eecfdffddd4ec14f
+Description:  HUAWEI serial addon for modeminfo
+
+Package: modeminfo-serial-meig
+Version: 0.4.2-7
+Depends: libc, modeminfo, kmod-usb-serial-option, atinout
+Section: net
+Architecture: all
+Installed-Size: 1258
+Filename: modeminfo-serial-meig_0.4.2-7_all.ipk
+Size: 2037
+SHA256sum: 197afc89daab2bf59b0e938f9b08a609279fb3a43797d311d07e5c7a78a40b18
+Description:  MEIGLink SLM750-R2/SLM820/SLM828 serial addon for modeminfo
+
+Package: modeminfo-serial-mikrotik
+Version: 0.4.2-7
+Depends: libc, modeminfo, kmod-usb-acm, atinout
+Section: net
+Architecture: all
+Installed-Size: 1429
+Filename: modeminfo-serial-mikrotik_0.4.2-7_all.ipk
+Size: 2204
+SHA256sum: 091b0d7e9447f9020445fd3dabc5bc56b485c443cbd41f69c9ad4c061e420d1c
+Description:  MikroTik R11e-LTE/R11e-LTE6 serial addon for modeminfo
+
+Package: modeminfo-serial-quectel
+Version: 0.4.2-7
+Depends: libc, modeminfo, kmod-usb-serial-option, atinout
+Section: net
+Architecture: all
+Installed-Size: 1353
+Filename: modeminfo-serial-quectel_0.4.2-7_all.ipk
+Size: 2123
+SHA256sum: d611b7c383407b80ad144747fe29e8570c8e158d473d7a14d1114089efdef0af
+Description:  QUECTEL serial addon for modeminfo
+
+Package: modeminfo-serial-sierra
+Version: 0.4.2-7
+Depends: libc, modeminfo, kmod-usb-serial-qualcomm, atinout
+Section: net
+Architecture: all
+Installed-Size: 1195
+Filename: modeminfo-serial-sierra_0.4.2-7_all.ipk
+Size: 1961
+SHA256sum: 71271280bc81cae5513b8fb5b4af03b235d512fe01b54abb818d06919ae3518e
+Description:  Sierra Wireless EM7455 serial addon for modeminfo
+
+Package: modeminfo-serial-simcom
+Version: 0.4.2-7
+Depends: libc, modeminfo, kmod-usb-serial-option, kmod-usb-acm, atinout
+Section: net
+Architecture: all
+Installed-Size: 1849
+Filename: modeminfo-serial-simcom_0.4.2-7_all.ipk
+Size: 2608
+SHA256sum: 1823543aa54658e99ddbf1f1aa213e0e4f9dc6c6227611561e2f98c7c78c9cdc
+Description:  SIMCOM SIM7600/SIM7906/SIM7912/A7600/A7906 serial addon for modeminfo
+
+Package: modeminfo-serial-styx
+Version: 0.4.2-7
+Depends: libc, modeminfo, kmod-usb-serial-option, atinout
+Section: net
+Architecture: all
+Installed-Size: 929
+Filename: modeminfo-serial-styx_0.4.2-7_all.ipk
+Size: 1684
+SHA256sum: c34b8bace9963644d59d741224c3102b35512f2c432c03abdd96b04e1b459d1f
+Description:  STYX MG8224 serial addon for modeminfo
+
+Package: modeminfo-serial-telit
+Version: 0.4.2-7
+Depends: libc, modeminfo, kmod-usb-serial-option, atinout
+Section: net
+Architecture: all
+Installed-Size: 1134
+Filename: modeminfo-serial-telit_0.4.2-7_all.ipk
+Size: 1912
+SHA256sum: 94d7e2fca79f9f32ed31b5256329a2ca35427622c4f120c5d73d037953d94514
+Description:  TELIT LN940/T77W678/HP4220 serial addon for modeminfo
+
+Package: modeminfo-serial-thales
+Version: 0.4.2-7
+Depends: libc, modeminfo, kmod-usb-serial-option, atinout
+Section: net
+Architecture: all
+Installed-Size: 1271
+Filename: modeminfo-serial-thales_0.4.2-7_all.ipk
+Size: 2046
+SHA256sum: d6d1a6a04e0ee40a8c6126225206846640e5b354597b8182f40457975e0d342f
+Description:  Thales MV31-W T99W175 serial addon for modeminfo
+
+Package: modeminfo-serial-tw
+Version: 0.4.2-7
+Depends: libc, modeminfo, kmod-usb-serial-option, atinout
+Section: net
+Architecture: all
+Installed-Size: 1011
+Filename: modeminfo-serial-tw_0.4.2-7_all.ipk
+Size: 1780
+SHA256sum: 43b2b39072219a815b8a6321dcb88f962db62079f5bbfeb9522e47008f8ca491
+Description:  ThinkWill ML7820+ serial addon for modeminfo
+
+Package: modeminfo-serial-xmm
+Version: 0.4.2-7
+Depends: libc, modeminfo, kmod-usb-acm, atinout
+Section: net
+Architecture: all
+Installed-Size: 1524
+Filename: modeminfo-serial-xmm_0.4.2-7_all.ipk
+Size: 2307
+SHA256sum: 83ecccd75f110f1f308335b2e55176900361b00175d4472484e37b487f74eedd
+Description:  FIBOCOM L850/L860 Intel XMM chips serial addon for modeminfo
+
+Package: modeminfo-serial-yuge
+Version: 0.4.2-7
+Depends: libc, modeminfo, kmod-usb-serial-option, atinout
+Section: net
+Architecture: all
+Installed-Size: 952
+Filename: modeminfo-serial-yuge_0.4.2-7_all.ipk
+Size: 1711
+SHA256sum: c4a23064354bf2efb2db73ef827093e23d4fb47a0a8b68143dde766cd5821446
+Description:  Yuge CLM920 serial addon for modeminfo
+
+Package: modeminfo-serial-zte
+Version: 0.4.2-7
+Depends: libc, modeminfo, kmod-usb-serial-option, atinout
+Section: net
+Architecture: all
+Installed-Size: 895
+Filename: modeminfo-serial-zte_0.4.2-7_all.ipk
+Size: 1660
+SHA256sum: f15aa8e813a5cd92022e4c46440e5c1440f76ae65c9500ba3691b992850999d0
+Description:  ZTE MF823/MF823D serial addon for modeminfo
+
+Package: modeminfo-telegram
+Version: 0.4.2-7
+Depends: libc, modeminfo, telegrambot
+Section: net
+Architecture: all
+Installed-Size: 952
+Filename: modeminfo-telegram_0.4.2-7_all.ipk
+Size: 1677
+SHA256sum: d5ffd01717d51a0033e1c3962fd6ff2d4903e400f036afe201444f0be340e105
+Description:  Plugin for telegrambot
+
+Package: modeminfo
+Version: 0.4.2-7
+Depends: libc, comgt
+Section: net
+Architecture: all
+Installed-Size: 4476
+Filename: modeminfo_0.4.2-7_all.ipk
+Size: 5226
+SHA256sum: f23d5a4302e33607ffe4781d08daa205f9a6743dd99b2c76cbc672c51a48fbee
+Description:  Signal information for 3G/LTE dongle
+
+Package: qtools
+Version: 0.0.1-0~cross
+Depends: libc, libreadline8, libncurses6
+License: LICENSE
+Section: telephony
+Architecture: mipsel_24kc
+Installed-Size: 150520
+Filename: qtools_0.0.1-0~cross_mipsel_24kc.ipk
+Size: 148439
+SHA256sum: 306e7b20ae3dc1702dcc0e20beb5db30b01787349863c06e362b50ce89022eb6
+Description:  A set of tools for working with flash modems based on the Qualcom chipset The set consists of a package of utilities and a set of patched loaders.
+
+Package: telegrambot
+Version: 0.0.4-3
+Depends: libc, curl
+Section: opt
+Architecture: all
+Installed-Size: 5560
+Filename: telegrambot_0.0.4-3_all.ipk
+Size: 6297
+SHA256sum: 9a9d009038d74c9220f0892c7efac1911c8d8464256041d5839f80b7a8c3eec8
+Description:  Telegram bot for router with firmware Lede/Openwrt.
+
+Package: xmm-modem
+Version: 0.1.3-2
+Depends: libc, comgt, kmod-usb-acm, kmod-usb-net-cdc-ncm
+Section: opt
+Architecture: all
+Installed-Size: 2443
+Filename: xmm-modem_0.1.3-2_all.ipk
+Size: 3230
+SHA256sum: 6a6e6542e71aa8e2840018b1de175966e7500355cf4a32c076aefab1ffccd2f8
+Description:  Simple connect to cellular for Fibocom L850/L860 module (Intel XMM LTE-A 7360/7560)
+
